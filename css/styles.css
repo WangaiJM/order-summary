@@ -1,0 +1,87 @@
+:root {
+  --pale: hsl(225, 100%, 94%);
+  --blue: hsl(245, 75%, 52%);
+  --verypale: hsl(225, 100%, 98%);
+  --desblue: hsl(224, 23%, 55%);
+  --darkblue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background: url(./../images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--pale);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 30%;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px var(--desblue);
+}
+.card-header {
+  width: 100%;
+}
+.card-header img {
+  width: 100%;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.card-body {
+  padding: 2rem;
+}
+.title {
+  text-align: center;
+  margin: 1.2rem;
+}
+.description {
+  text-align: center;
+  padding-bottom: 1rem;
+  line-height: 1.5;
+}
+.prices {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--verypale);
+  padding: 2rem;
+  border-radius: 1.2rem;
+  align-items: center;
+}
+.plans {
+  display: flex;
+  align-items: center;
+}
+.content {
+  margin-left: 1rem;
+}
+.btn {
+  width: 100%;
+  margin: 1.2rem 0;
+  padding: 1.2rem;
+  border-radius: 1.4rem;
+  border: none;
+  cursor: pointer;
+}
+.btn-proceed {
+  background-color: var(--blue);
+  color: white;
+  font-weight: 500;
+  box-shadow: 4px 4px 4px var(--pale);
+}
+.btn-cancel {
+  background-color: transparent;
+  box-shadow: 2px 2px 2px 2px var(--verypale);
+}
